@@ -1,7 +1,7 @@
 SECTION "bootrom", ROM0[$0000]
 main:
 .loop:
-    
+
     ; Init stackpointer
     ld SP, $FFFE
 

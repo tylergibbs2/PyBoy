@@ -61,9 +61,8 @@ tmp.state
 /pyboy/**/*.h
 /pyboy/**/*.html
 /pyboy/**/*.so
-/pyboy/.vscode
-/screenshots/*
 
+/screenshots
 /recordings
 
 /bin
@@ -81,12 +80,11 @@ Projects/Projects.blg
 Projects/Projects.out
 Projects/Projects.log
 
-bootrom/bootrom.map
-bootrom/bootrom.obj
-bootrom/bootrom.sym
+bootrom/bootrom_*.map
+bootrom/bootrom_*.obj
+bootrom/bootrom_*.sym
 bootrom/logo.asm
 bootrom/pyboy.png
-bootrom/PYBOY_ROM.bin
 
 default_rom/default_rom.map
 default_rom/default_rom.obj

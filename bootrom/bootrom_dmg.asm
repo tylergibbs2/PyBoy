@@ -3,7 +3,7 @@ main:
 .loop:
     ; Init stackpointer
     ld SP, $FFFE
-    
+
     ; Enable LCD and background tilemap
     ld A, $91
     ld [$FF00+$40], A
@@ -175,7 +175,7 @@ main:
 INCLUDE "logo.asm"
 
 SECTION "epilog", ROM0[$00FC]
-end
+end:
     ld A, $1
     ld [$FF00+$50], A
 
