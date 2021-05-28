@@ -11,11 +11,9 @@ import zlib
 from array import array
 from base64 import b64decode
 
-import sdl2
 from pyboy.botsupport import constants, tilemap
 from pyboy.botsupport.sprite import Sprite
 from pyboy.plugins.base_plugin import PyBoyWindowPlugin
-from pyboy.plugins.window_sdl2 import sdl2_event_pump
 from pyboy.utils import WindowEvent
 
 logger = logging.getLogger(__name__)

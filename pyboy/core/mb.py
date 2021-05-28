@@ -8,7 +8,7 @@ import logging
 from pyboy.core.opcodes import CPU_COMMANDS
 from pyboy.utils import STATE_VERSION
 
-from . import bootrom, cartridge, cpu, interaction, lcd, ram, sound, timer
+from . import bootrom, cartridge, cpu, interaction, lcd, ram, timer
 
 INTR_VBLANK, INTR_LCDC, INTR_TIMER, INTR_SERIAL, INTR_HIGHTOLOW = [1 << x for x in range(5)]
 
@@ -40,8 +40,6 @@ class Motherboard:
         self.cpu = cpu.CPU(self, profiling)
         self.lcd = lcd.LCD(disable_renderer, color_palette, randomize=randomize)
         self.sound_enabled = sound_enabled
-        if sound_enabled:
-            self.sound = sound.Sound()
         self.bootrom_enabled = True
         self.serialbuffer = ""
 

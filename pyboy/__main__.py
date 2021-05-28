@@ -67,7 +67,7 @@ parser.add_argument(
     "--window",
     default=defaults["window_type"],
     type=str,
-    choices=["SDL2", "OpenGL", "headless", "dummy"],
+    choices=["OpenGL", "headless", "dummy"],
     help="Specify window-type to use"
 )
 parser.add_argument("-s", "--scale", default=defaults["scale"], type=int, help="The scaling multiplier for the window")

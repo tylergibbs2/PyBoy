@@ -69,6 +69,7 @@ class PyBoy:
         """
 
         self.initialized = False
+        sound = False
 
         for k, v in defaults.items():
             if k not in kwargs:
